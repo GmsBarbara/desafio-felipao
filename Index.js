@@ -1,27 +1,46 @@
-// Definindo variáveis 
-var nomeDoHeroi = "Barbara";
-var xpDoHeroi = 6000; 
+// Definindo variáveis
+var qt_vitoria = 1;
+var qt_derrota = 6;
 
-// Estrutura de repetição
+
 var nivelDoHeroi;
+var saldo;
 
-if (xpDoHeroi < 1000) {
+// Calcula o saldo de vitórias
+
+if (qt_vitoria > 10) {
   nivelDoHeroi = "Ferro";
-} else if (xpDoHeroi >= 1001 && xpDoHeroi <= 2000) {
+
+}
+else if (qt_vitoria < 10) {
+  nivelDoHeroi = "Não Classificado";
+} else if (qt_vitoria >= 10 && qt_vitoria <= 20) {
   nivelDoHeroi = "Bronze";
-} else if (xpDoHeroi >= 2001 && xpDoHeroi <= 5000) {
-  nivelDoHeroi = "Prata";
-} else if (xpDoHeroi >= 6001 && xpDoHeroi <= 7000) {
-  nivelDoHeroi = "Ouro";
-} else if (xpDoHeroi >= 7001 && xpDoHeroi <= 8000) {
-  nivelDoHeroi = "Platina";
-} else if (xpDoHeroi >= 8001 && xpDoHeroi <= 9000) {
-  nivelDoHeroi = "Ascendente";
-} else if (xpDoHeroi >= 9001 && xpDoHeroi <= 10000) {
-  nivelDoHeroi = "Imortal";
-} else {
-  nivelDoHeroi = "Radiante";
 }
 
-// Exiba a mensagem com o nome e o nível do herói
-console.log("O Herói de nome " + nomeDoHeroi + " está no nível de " + nivelDoHeroi);
+else if (qt_vitoria > 20 && qt_vitoria <= 30) {
+  nivelDoHeroi = "Prata";
+}
+
+else if (qt_vitoria > 30 && qt_vitoria <= 40) {
+  nivelDoHeroi = "Ouro";
+}
+
+else if (qt_vitoria > 40 && qt_vitoria <= 50) {
+  nivelDoHeroi = "Platina";
+}
+
+else if (qt_vitoria > 50 && qt_vitoria <= 60) {
+  nivelDoHeroi = "Diamante";
+}
+
+else if (qt_vitoria > 60 && qt_vitoria <= 70) {
+  nivelDoHeroi = "Lendário";
+}
+
+else if (qt_vitoria > 70 && qt_vitoria <= 80) {
+  nivelDoHeroi = "Imortal";
+}
+
+// Exibe a mensagem com o nome e o nível do herói
+console.log("O Herói está no nível de " + nivelDoHeroi);
